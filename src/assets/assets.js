@@ -1,17 +1,18 @@
 const headerElements = {
   logo: {
-    content: { src: 'src/assets/IMGs/pinterest_logo.png', alt: 'Company-logo' },
-    id: '#logo'
+    id: 'logo',
+    content: { src: 'src/assets/IMGs/pinterest_logo.png', alt: 'Company-logo' }
   },
 
   navbar: {
+    id: 'navBar',
     firstUl: {
       startPageButton: { content: 'Inicio' },
       exploreButton: { content: 'Explorar' },
       createButton: { content: 'Crear' }
     },
 
-    searchBar: { content: ['🔎', 'Buscar'] },
+    searchBar: { id: 'searchBar', content: ['🔎', 'Buscar'] },
 
     secondUl: {
       notificationBell: {

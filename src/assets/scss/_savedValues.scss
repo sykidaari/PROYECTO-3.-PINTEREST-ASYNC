@@ -1,0 +1,43 @@
+//* FONT
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  src: url('../assets/Font_Inter/Inter-VariableFont_opsz\,wght.ttf');
+}
+@font-face {
+  font-family: Inter;
+  font-style: italic;
+  src: url('../assets/Font_Inter/Inter-Italic-VariableFont_opsz\,wght.ttf');
+}
+
+//* VARIABLES
+
+// COLORS
+$theme-color-1: #ffffff;
+$theme-color-2: #000000;
+$theme-color-3: #ff0000;
+
+$detail-color-1: #e5e5e5;
+$detail-color-2: #e7e7e7;
+$detail-color-3: #757575;
+
+$detail-color-transparent-1: #00000042;
+
+// SPACING
+$button-border-radius: 30px;
+
+$spacing-1: 10px;
+$spacing-2: 18px;
+$spacing-3: 26px;
+
+// FONT-SIZES
+$font-s: 16px;
+$font-l: 24px;
+$font-xl: 32px;
+
+// * MIXINS
+@mixin flexbox($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

@@ -11,7 +11,8 @@ export const createHeader = (appSelector) => {
   logoIMG.src = headerElements.logo.content.src;
   logoIMG.alt = headerElements.logo.content.alt;
 
-  const navbar = createAndAppendChild(header, 'navbar');
+  const navbar = createAndAppendChild(header, 'nav');
+  navbar.id = headerElements.navbar.id;
 
   const firstUl = createAndAppendChild(navbar, 'ul');
   for (const key in headerElements.navbar.firstUl) {
@@ -22,7 +23,7 @@ export const createHeader = (appSelector) => {
   }
 
   const searchBar = createAndAppendChild(navbar, 'div');
-  searchBar.id = 'searchBar';
+  searchBar.id = headerElements.navbar.searchBar.id;
 
   const [searchButtonContent, SearchInputContent] =
     headerElements.navbar.searchBar.content;

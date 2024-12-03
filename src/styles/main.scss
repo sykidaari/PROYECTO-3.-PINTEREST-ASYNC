@@ -1,3 +1,121 @@
-header {
-  display: flex;
+@import '../assets/scss/_savedValues.scss';
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Inter;
 }
+body {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+header {
+  @include flexbox(space-between, center);
+  padding: $spacing-2 $spacing-3;
+  gap: $spacing-1;
+
+  #logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #navBar {
+    @include flexbox(space-between, center);
+    flex-grow: 1;
+
+    font-size: $font-l;
+    gap: $spacing-1;
+
+    ul {
+      @include flexbox(space-between, center);
+
+      gap: $spacing-1;
+
+      .navOption {
+        padding: $spacing-2 $spacing-2;
+        border-radius: $button-border-radius;
+
+        color: $theme-color-2;
+
+        &:hover {
+          background-color: $theme-color-2;
+          color: $theme-color-1;
+        }
+      }
+      &:last-of-type {
+        gap: $spacing-2;
+        li {
+          > button {
+            width: 40px;
+            height: 40px;
+          }
+          &:not(:last-of-type) > button {
+            background-color: $theme-color-1;
+          }
+          &:last-of-type > button {
+            font-size: $font-l;
+            color: $detail-color-3;
+            background-color: $detail-color-2;
+            border-radius: $button-border-radius;
+          }
+        }
+      }
+    }
+    #searchBar {
+      @include flexbox(flex-start, center);
+      flex-grow: 2;
+
+      background-color: $detail-color-1;
+      gap: $spacing-1;
+      padding: $spacing-2 $spacing-2;
+      border-radius: $button-border-radius;
+
+      button {
+        background-color: $detail-color-1;
+        font-size: $font-xl;
+      }
+
+      input {
+        background-color: $detail-color-1;
+        color: $detail-color-3;
+        font-size: $font-l;
+        width: 100%;
+
+        &::-webkit-search-cancel-button {
+          -webkit-appearance: none;
+          height: 10px;
+          width: 10px;
+
+          clip-path: polygon(
+            10% 0%,
+            0% 10%,
+            40% 50%,
+            0% 90%,
+            10% 100%,
+            50% 60%,
+            90% 100%,
+            100% 90%,
+            60% 50%,
+            100% 10%,
+            90% 0%,
+            50% 40%
+          );
+          background: $detail-color-3;
+        }
+        &:focus {
+          outline: 2px solid $detail-color-transparent-1;
+          outline-offset: 2px;
+          box-shadow: 0 0 0 4px $theme-color-1;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+@import '../styles/mediaQueries';

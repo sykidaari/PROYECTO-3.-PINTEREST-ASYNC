@@ -1,0 +1,19 @@
+@media (max-width: 1023px) {
+  header #navBar {
+    ul {
+      &:not(:last-of-type) {
+        display: none;
+      }
+      > li:not(:last-of-type) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  header #navBar #searchBar input,
+  header #navBar #searchBar button {
+    font-size: $font-s;
+  }
+}
