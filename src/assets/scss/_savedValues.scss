@@ -22,10 +22,13 @@ $detail-color-2: #e7e7e7;
 $detail-color-3: #757575;
 
 $detail-color-transparent-1: #00000042;
+$detail-color-transparent-2: #00000013;
 
 // SPACING
 $button-border-radius: 30px;
+$postIMG-border-radius: 20px;
 
+$spacing-0: 8px;
 $spacing-1: 10px;
 $spacing-2: 18px;
 $spacing-3: 26px;
@@ -40,4 +43,9 @@ $font-xl: 32px;
   display: flex;
   justify-content: $justify-content;
   align-items: $align-items;
+}
+
+@mixin postTextElement($bottom) {
+  position: absolute;
+  bottom: $bottom;
 }

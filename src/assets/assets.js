@@ -29,4 +29,17 @@ const headerElements = {
   }
 };
 
-export { headerElements };
+const galleryPostElements = {
+  postedIMG: { element: 'img', class: 'postedIMG' },
+  profilePicture: { element: 'img', class: 'profilePicture' },
+  userName: { element: 'h5', class: 'userName' },
+
+  downloadButton: {
+    element: 'button',
+    class: 'downloadButton',
+    innerElement: { element: 'img', src: '/src/assets/IMGs/upload_share.png' }
+  },
+  date: { element: 'h6', class: 'date' }
+};
+
+export { headerElements, galleryPostElements };
