@@ -4,7 +4,7 @@ import { createAndAppendChild } from './createAndAppendChild';
 export const postElements = {};
 
 export const createPost = (parentBox) => {
-  const post = createAndAppendChild(parentBox, 'article');
+  const post = createAndAppendChild('#gallery', 'article');
 
   for (const key in galleryPostElements) {
     const postElement = createAndAppendChild(

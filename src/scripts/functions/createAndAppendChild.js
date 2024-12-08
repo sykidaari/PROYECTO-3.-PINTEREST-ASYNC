@@ -6,5 +6,6 @@ export const createAndAppendChild = (parent, newTag) => {
     parentTag = document.querySelector(parent);
   }
   const newElement = parentTag.appendChild(document.createElement(newTag));
+
   return newElement;
 };

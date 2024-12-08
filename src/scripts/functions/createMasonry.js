@@ -7,7 +7,7 @@ export const createMasonry = (gridBox, gridItem) => {
     msnry.destroy();
   }
 
-  const grid = document.querySelector(gridBox);
+  const grid = gridBox;
 
   imagesLoaded(grid, () => {
     msnry = new Masonry(grid, {
