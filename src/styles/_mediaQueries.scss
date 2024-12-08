@@ -17,3 +17,58 @@
     font-size: $font-s;
   }
 }
+
+// MASONRY ADUJSTMENTS
+
+@media (max-width: 866px) {
+  main #gallery article {
+    width: 235px;
+    .postedIMG {
+      width: 235px;
+    }
+  }
+}
+
+@media (max-width: 776px) {
+  main #gallery article {
+    width: 185px;
+    .postedIMG {
+      width: 185px;
+    }
+  }
+}
+@media (max-width: 626px) {
+  main #gallery article {
+    width: 145px;
+    .postedIMG {
+      width: 145px;
+    }
+  }
+}
+
+@media (max-width: 626px) {
+  main #gallery article {
+    width: 185px;
+    .postedIMG {
+      width: 185px;
+    }
+  }
+}
+
+@media (max-width: 422px) {
+  main #gallery article {
+    width: 145px;
+    .postedIMG {
+      width: 145px;
+    }
+  }
+}
+
+@media (max-width: 342px) {
+  main #gallery article {
+    width: 105px;
+    .postedIMG {
+      width: 105px;
+    }
+  }
+}

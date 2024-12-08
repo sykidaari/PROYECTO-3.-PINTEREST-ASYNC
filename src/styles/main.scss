@@ -123,10 +123,8 @@ main {
   padding: $spacing-2;
 
   #gallery {
-    justify-content: center;
-
-    grid-auto-rows: 10px;
-
+    width: 100%;
+    margin: 0 auto;
     article {
       width: 265px;
       @include flexbox(space-between, center);
@@ -139,7 +137,7 @@ main {
       .postedIMG {
         border-radius: $postIMG-border-radius;
 
-        width: 264px;
+        width: 265px;
         height: auto;
       }
       .profilePicture {

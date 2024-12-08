@@ -1,13 +1,16 @@
-import { createMasonry } from './createMasonry';
+import { createMasonry, msnry } from './createMasonry';
 import { createPost, postElements } from './createPost';
 
-export const initiateGallery = async (containerElement, galleryItem) => {
+export const search = async (e, inputValue, containerElement, galleryItem) => {
+  document.querySelector(containerElement).innerHTML = '';
+
   try {
     const response = await fetch(
-      'https://api.unsplash.com/photos?order_by=latest&per_page=25&client_id=V6C9h-2o3BlK2ZmwogMFlRU6N9I6dN0LiatO54mv3Dc'
+      `https://api.unsplash.com/search/photos?query=${inputValue}&client_id=V6C9h-2o3BlK2ZmwogMFlRU6N9I6dN0LiatO54mv3Dc`
     );
+    const data = await response.json();
+    const posts = data.results;
 
-    const posts = await response.json();
     for (const element of posts) {
       createPost('#gallery');
 
@@ -18,7 +21,6 @@ export const initiateGallery = async (containerElement, galleryItem) => {
       userName.innerText = element.user.name;
       date.innerText = element.created_at.split('T')[0];
     }
-
     createMasonry(containerElement, galleryItem);
   } catch (error) {
     console.log(error);
