@@ -168,7 +168,16 @@ main {
         font-size: $font-s;
         right: 72px;
       }
+      .hoverDiv {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        display: grid;
+
+        grid-template: ;
+      }
     }
   }
 }
+
 @import '../styles/mediaQueries';

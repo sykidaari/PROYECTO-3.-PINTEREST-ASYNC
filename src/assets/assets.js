@@ -42,4 +42,16 @@ const galleryPostElements = {
   date: { element: 'h6', class: 'date' }
 };
 
-export { headerElements, galleryPostElements };
+const postHoverElements = {
+  cameraButton: {
+    src: '/src/assets/IMGs/icon_camera.png',
+    alt: 'camera-button'
+  },
+  likeButton: {
+    src: '/src/assets/IMGs/like_heart.png',
+    alt: 'like-button'
+  },
+  visitButton: { text: 'Visitar' }
+};
+
+export { headerElements, galleryPostElements, postHoverElements };

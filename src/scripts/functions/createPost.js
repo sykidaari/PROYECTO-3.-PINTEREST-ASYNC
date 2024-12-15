@@ -1,10 +1,11 @@
 import { galleryPostElements } from '../../assets/assets';
 import { createAndAppendChild } from './createAndAppendChild';
+import { createPostHoverElements } from './postHover';
 
 export const postElements = {};
 
 export const createPost = (parentBox) => {
-  const post = createAndAppendChild('#gallery', 'article');
+  const post = createAndAppendChild(parentBox, 'article');
 
   for (const key in galleryPostElements) {
     const postElement = createAndAppendChild(
@@ -23,4 +24,5 @@ export const createPost = (parentBox) => {
 
     postElements[key] = postElement;
   }
+  return post;
 };

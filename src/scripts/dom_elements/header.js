@@ -22,7 +22,7 @@ export const createHeader = (appSelector) => {
     a.innerText = headerElements.navbar.firstUl[key].content;
   }
 
-  const searchBar = createAndAppendChild(navbar, 'div');
+  const searchBar = createAndAppendChild(navbar, 'form');
   searchBar.id = headerElements.navbar.searchBar.id;
 
   const [searchButtonContent, SearchInputContent] =

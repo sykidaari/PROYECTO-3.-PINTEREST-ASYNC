@@ -15,6 +15,8 @@ Hola! Gracias por corregir mi proyecto. Dejo aquí algunas aclaraciones sobre el
 
 · Decidí optar por esta estructura, para que sea fácil cambiar cualquier elemento propio de la página, ya que están todos separatos en src/assets, y tienen una organización simple y cómodamente modificable y legible. Incluso alguien que no sepa programar podría cambiar rápidamente colores, textos, íconos, etc. en la página.
 
+Vi más tarde la clase de componentes y veo que esta realmente no es una forma muy óptima de organizar los archivos, pero creo que igualmente funciona en este proyecto ya que no se va a escalar más.
+
 ## FUNCIÓN: createAndAppendChild
 
 Creé esta función para agilizar el proceso de crear y pintar elementos en el DOM, ya que es una tarea que se repite constantemente en mi flujo de trabajo.

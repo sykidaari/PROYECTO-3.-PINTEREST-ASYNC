@@ -3,6 +3,7 @@ import imagesLoaded from 'imagesloaded';
 
 export let msnry;
 export const createMasonry = (gridBox, gridItem) => {
+  const scrollTop = window.scrollY;
   if (msnry) {
     msnry.destroy();
   }
@@ -18,6 +19,8 @@ export const createMasonry = (gridBox, gridItem) => {
       isFitWidth: true
     });
     msnry.layout();
+
+    window.scrollTo({ top: scrollTop, behavior: 'auto' });
 
     window.addEventListener('resize', () => {
       msnry.layout();
