@@ -26,6 +26,20 @@
     .postedIMG {
       width: 235px;
     }
+    .profilePicture {
+      width: 100px;
+      height: 100px;
+
+      bottom: 50px;
+
+      margin-bottom: 5px;
+    }
+    .downloadButton {
+      left: 62px;
+    }
+    .date {
+      right: 62px;
+    }
   }
 }
 
@@ -35,6 +49,20 @@
     .postedIMG {
       width: 185px;
     }
+    .profilePicture {
+      width: 90px;
+      height: 90px;
+
+      bottom: 45px;
+
+      margin-bottom: 10px;
+    }
+    .downloadButton {
+      left: 32px;
+    }
+    .date {
+      right: 32px;
+    }
   }
 }
 @media (max-width: 626px) {
@@ -42,6 +70,10 @@
     width: 145px;
     .postedIMG {
       width: 145px;
+    }
+    .profilePicture {
+      width: 80px;
+      height: 80px;
     }
   }
 }
@@ -51,6 +83,10 @@
     width: 185px;
     .postedIMG {
       width: 185px;
+    }
+    .profilePicture {
+      width: 90px;
+      height: 90px;
     }
   }
 }
@@ -61,6 +97,21 @@
     .postedIMG {
       width: 145px;
     }
+    .profilePicture {
+      width: 80px;
+      height: 80px;
+    }
+    .downloadButton {
+      left: 22px;
+    }
+    .date {
+      right: 27px;
+
+      font-size: $font-xs;
+    }
+    .userName {
+      font-size: $font-xs;
+    }
   }
 }
 
@@ -69,6 +120,16 @@
     width: 105px;
     .postedIMG {
       width: 105px;
+    }
+    .profilePicture {
+      width: 70px;
+      height: 70px;
+    }
+    .downloadButton {
+      left: 5px;
+    }
+    .date {
+      right: 5px;
     }
   }
 }

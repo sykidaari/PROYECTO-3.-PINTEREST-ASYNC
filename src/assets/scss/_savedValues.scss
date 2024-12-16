@@ -34,6 +34,7 @@ $spacing-2: 18px;
 $spacing-3: 26px;
 
 // FONT-SIZES
+$font-xs: 12px;
 $font-s: 16px;
 $font-l: 24px;
 $font-xl: 32px;
@@ -48,4 +49,16 @@ $font-xl: 32px;
 @mixin postTextElement($bottom) {
   position: absolute;
   bottom: $bottom;
+}
+
+// * EXTENDS
+
+%hoverButton {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  background-color: $detail-color-1;
+  margin: $spacing-0;
+
+  box-shadow: 0px 0px 4px 0px $theme-color-2;
 }

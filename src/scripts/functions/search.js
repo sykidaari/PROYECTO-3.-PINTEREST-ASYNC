@@ -49,6 +49,16 @@ export const search = async (
 
           currentLikes++;
           likesSpan.innerText = currentLikes;
+
+          const likeButtons = document.querySelectorAll('.likeButton');
+
+          likeButtons.forEach((button) => {
+            button.addEventListener('click', (event) => {
+              const clickedButton = event.currentTarget;
+              clickedButton.style.filter = 'saturate(700%)';
+              clickedButton.style.backgroundColor = 'white';
+            });
+          });
         });
       }
     }

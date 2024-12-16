@@ -24,7 +24,7 @@ create_reloadInitialGallery_event('#logo', '#gallery');
 //* CREATE INFINITE POST LOAD/BUTTON TO LOAD MORE POSTS DONE
 // * ALL SEARCH LOGIC IS DONE
 
-//! CREATE HOVER ELEMENTS ON POST - done, making like function
+//* CREATE HOVER ELEMENTS ON POST - done, like function done
 //? CREATE OPTION TO SWITCH TO ZEN MODE
 
-//? FIX STYLES - post elements positions/font-size in media queries - all else done for now
+//* FIX STYLES - post elements positions/font-size in media queries - all else done for now - DONE

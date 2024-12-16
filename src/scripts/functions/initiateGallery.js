@@ -13,7 +13,7 @@ export const initiateGallery = async (parentBox, galleryItem, page, value) => {
     );
 
     const posts = await response.json();
-    console.log(posts);
+
     for (const element of posts) {
       const article = createPost('#gallery');
 
@@ -35,6 +35,16 @@ export const initiateGallery = async (parentBox, galleryItem, page, value) => {
 
           currentLikes++;
           likesSpan.innerText = currentLikes;
+
+          const likeButtons = document.querySelectorAll('.likeButton');
+
+          likeButtons.forEach((button) => {
+            button.addEventListener('click', (event) => {
+              const clickedButton = event.currentTarget;
+              clickedButton.style.filter = 'saturate(700%)';
+              clickedButton.style.backgroundColor = 'white';
+            });
+          });
         });
       }
     }
@@ -53,6 +63,7 @@ export const create_reloadInitialGallery_event = (button, parentBox) => {
   const logoButton = document.querySelector(button);
   logoButton.addEventListener('click', () => {
     document.querySelector(parentBox).innerHTML = '';
+    window.scrollTo({ top: 0 });
     initiateGallery('#gallery', 'article', 0, 1);
   });
 };
