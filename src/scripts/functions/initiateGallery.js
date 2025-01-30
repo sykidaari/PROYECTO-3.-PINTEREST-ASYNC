@@ -65,5 +65,10 @@ export const create_reloadInitialGallery_event = (button, parentBox) => {
     document.querySelector(parentBox).innerHTML = '';
     window.scrollTo({ top: 0 });
     initiateGallery('#gallery', 'article', 0, 1);
+
+    if (document.querySelector('#noresults')) {
+      console.log('Hi');
+      document.querySelector('#noresults').remove();
+    }
   });
 };

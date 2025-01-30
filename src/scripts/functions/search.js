@@ -2,6 +2,7 @@ import { createAndAppendChild } from './createAndAppendChild';
 import { createMasonry } from './createMasonry';
 import { createPost, postElements } from './createPost';
 import { page, setGalleryOption, state } from './galleryScroll';
+import { noResults } from './noResults';
 import { createPostHoverElements } from './postHover';
 
 export const search = async (
@@ -20,12 +21,15 @@ export const search = async (
     if (page === 1) {
       document.querySelector(parentBox).innerHTML = '';
     }
+
     const data = await response.json();
 
     const posts = data.results;
 
     if (posts.length === 0) {
       search('gatos', '#gallery', 'article', 1, 2);
+      noResults();
+      console.log('Noresults run');
     }
 
     for (const element of posts) {
@@ -84,6 +88,10 @@ export const createSearchEvent = (form, input) => {
 
       search(inputValue, '#gallery', 'article', 1, 2);
       searchInput.value = '';
+    }
+    if (document.querySelector('#noresults')) {
+      console.log('Hi');
+      document.querySelector('#noresults').remove();
     }
   });
 };

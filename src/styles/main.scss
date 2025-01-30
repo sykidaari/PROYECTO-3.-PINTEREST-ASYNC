@@ -130,7 +130,7 @@ header {
 }
 
 main {
-  margin-top: 120px;
+  margin-top: 170px;
   padding: $spacing-2;
 
   #backToTop {
@@ -253,6 +253,24 @@ main {
       &:hover > .hoverDiv {
         display: grid;
       }
+    }
+  }
+  #noresults {
+    display: flex;
+
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+
+    padding: $spacing-3;
+    background-color: $detail-color-1;
+    color: $detail-color-3;
+
+    p {
+      position: relative;
+      top: 10px;
     }
   }
 }
