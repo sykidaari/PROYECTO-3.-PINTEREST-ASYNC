@@ -29,7 +29,6 @@ export const search = async (
     if (posts.length === 0) {
       search('gatos', '#gallery', 'article', 1, 2);
       noResults();
-      console.log('Noresults run');
     }
 
     for (const element of posts) {
@@ -90,7 +89,6 @@ export const createSearchEvent = (form, input) => {
       searchInput.value = '';
     }
     if (document.querySelector('#noresults')) {
-      console.log('Hi');
       document.querySelector('#noresults').remove();
     }
   });
