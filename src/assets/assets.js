@@ -1,7 +1,7 @@
 const headerElements = {
   logo: {
     id: 'logo',
-    content: { src: 'src/assets/IMGs/pinterest_logo.png', alt: 'Company-logo' }
+    content: { src: 'IMGs/pinterest_logo.png', alt: 'Company-logo' }
   },
 
   navbar: {
@@ -17,12 +17,12 @@ const headerElements = {
     secondUl: {
       notificationBell: {
         content: {
-          src: 'src/assets/IMGs/notification_bell.png',
+          src: 'IMGs/notification_bell.png',
           alt: 'Notification-Bell'
         }
       },
       commentButton: {
-        content: { src: 'src/assets/IMGs/comment_dots.png', alt: 'Comments' }
+        content: { src: 'IMGs/comment_dots.png', alt: 'Comments' }
       },
       profileButton: { content: 'D' }
     }
@@ -37,18 +37,18 @@ const galleryPostElements = {
   downloadButton: {
     element: 'button',
     class: 'downloadButton',
-    innerElement: { element: 'img', src: '/src/assets/IMGs/upload_share.png' }
+    innerElement: { element: 'img', src: 'IMGs/upload_share.png' }
   },
   date: { element: 'h6', class: 'date' }
 };
 
 const postHoverElements = {
   cameraButton: {
-    src: '/src/assets/IMGs/icon_camera.png',
+    src: 'IMGs/icon_camera.png',
     alt: 'camera-button'
   },
   likeButton: {
-    src: '/src/assets/IMGs/like_heart.png',
+    src: 'IMGs/like_heart.png',
     alt: 'like-button'
   },
   visitButton: { text: 'Visitar' }
